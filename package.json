@@ -1,0 +1,22 @@
+{
+  "name": "gfwlist2routeros",
+  "version": "0.0.3",
+  "description": "把伟大的GFWLIST转化写进RouterOS",
+  "author": {
+    "name": "Michael Yin",
+    "email": "layerssss@gmail.com"
+  },
+  "bin": {
+    "gfwlist2routeros": "./bin/gfwlist2routeros"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/layerssss/gfwlist2routeros.git"
+  },
+  "dependencies":{
+    "gfwlist2ip.js":"latest",
+    "commander":"latest",
+    "coffee-script":"latest"
+  },
+  "readmeFilename": "README.md"
+}

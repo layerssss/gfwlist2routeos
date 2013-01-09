@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+require("coffee-script");
+var program = require('commander');
+
+var options = {};
+program
+  .version(require('../package.json').version)
+  .usage('[options]')
+  .option('-h, --host <host>', 'RouterOS api <host>')
+  .option('-u, --username <username>', 'RouterOS <username>')
+  .option('-p, --password <password>', 'RouterOS <password>')
+  .option('-m, --routingmark <routingmark>', 'RouterOS <routingmark>, default to `gfwlist`');
+
+program.parse(process.argv);
+if(program.host&&program.username&&program.password){
+  require('../lib/gfwlist2routeros')(program);
+}
