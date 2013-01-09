@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-require("coffee-script");
+require("iced-coffee-script");
 var program = require('commander');
 
 var options = {};
@@ -13,5 +13,8 @@ program
 
 program.parse(process.argv);
 if(program.host&&program.username&&program.password){
+  program.routingmark=program.routingmark||'gfwlist';
   require('../lib/gfwlist2routeros')(program);
+}else{
+  program.help();
 }

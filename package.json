@@ -16,7 +16,8 @@
   "dependencies":{
     "gfwlist2ip.js":"latest",
     "commander":"latest",
-    "coffee-script":"latest"
+    "iced-coffee-script":"latest",
+    "mikronode":"latest"
   },
   "readmeFilename": "README.md"
 }
