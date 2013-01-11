@@ -9,6 +9,7 @@ program
   .option('-h, --host <host>', 'RouterOS api <host>')
   .option('-u, --username <username>', 'RouterOS <username>')
   .option('-p, --password <password>', 'RouterOS <password>')
+  .option('-f, --file <file>', 'Gfwlist file')
   .option('-m, --routingmark <routingmark>', 'RouterOS <routingmark>, default to `gfwlist`');
 
 program.parse(process.argv);

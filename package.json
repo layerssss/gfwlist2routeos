@@ -14,7 +14,7 @@
     "url": "git://github.com/layerssss/gfwlist2routeros.git"
   },
   "dependencies":{
-    "gfwlist2ip.js":"latest",
+    "gfwlist2ip":"latest",
     "commander":"latest",
     "iced-coffee-script":"latest",
     "mikronode":"latest"
