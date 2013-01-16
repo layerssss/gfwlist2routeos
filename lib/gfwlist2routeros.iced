@@ -19,7 +19,7 @@ module.exports= (options)->
 
         gfwlist2ip.onResolved = (address)->
           chan = conn.openChannel()
-          chan.write ['/ip/route/rule/add',"=dst-address=#{address}","=table=#{options.routingmark}",'=action=lookup'],()->
+          chan.write ['/ip/route/rule/add',"=dst-address=#{address}","=table=#{options.routingmark}",'=action=lookup-only-in-table'],()->
             chan.on 'done',()->
               chan.close()
               console.log "#{address} added to rules..."
