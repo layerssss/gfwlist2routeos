@@ -1,6 +1,6 @@
 {
   "name": "gfwlist2routeros",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "把伟大的GFWLIST转化写进RouterOS",
   "author": {
     "name": "Michael Yin",
