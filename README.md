@@ -21,6 +21,7 @@ gfwlist2routeos
 * 安装[nodejs](http://nodejs.org/)运行环境
 * sudo npm install gfwlist2routeros -g 如果是windows的话则为 npm install gfwlist2routeros -g
 * 在routeros里确保/ip/service/api为enable的状态
+* 在已翻墙的环境下运行该脚本，否则解析被墙域名时会被dns污染
 
 ## 使用方法
 
