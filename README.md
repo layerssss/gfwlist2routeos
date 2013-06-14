@@ -13,7 +13,7 @@ gfwlist2routeos
 
 ## 所以项目仍然存在一些问题
 
-* gfwlist 中包含一些通配符规则，如 *.google.com.* 之类的，该项目无法识别
+* gfwlist 中包含一些通配符规则，如 `*.google.com.*` 之类的，该项目无法识别
 
 ## 安装方法
 
